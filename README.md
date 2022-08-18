@@ -154,3 +154,85 @@ Segue os passos de instalação:
 - Procure por Assets da release mais recente e clique no pacote referente ao seu Sistema Operacional e Arquitetura (32 ou 64 bits), exemplo: geckodriver-v0.25.0-win64.zip
 geckdriver.JPG
 - Extraia o conteúdo do arquivo baixado para C:\Ruby26-x64\bin (Local de instalação do Ruby)
+
+## **Instalação** 
+
+Siga os passos abaixo para instalação do projeto:
+
+**Clone do Projeto**
+
+```
+git clone  https://github.com/Mimorenoo/automation_web_cortex.git
+
+**Local do projeto**
+```
+cd automation_web_cortex
+```
+**Instalar o Bundle**
+```
+bundle install
+```
+**Instalar o Cucumber**
+```
+gem install cucumber -v 3.1.2
+```
+**Instalar o Rubocop**
+```
+gem install rubocop -v 1.7.0
+```
+**Instalar o Selenium WebDriver**
+- **ChromeDriver** (Google Chrome): https://chromedriver.storage.googleapis.com/index.html 
+- **Geckodriver** (Firefox): https://github.com/mozilla/geckodriver/releases
+
+## **Estrutura do Projeto**
+
+Os arquivos do projeto são organizados da seguinte forma:
+```tree
+
+.
+├── features
+│   ├── specifications - Descrição dos cenários em formato BDD/Gherkin
+│   ├── step_definitions - Implementação do script de teste de cada step do BDD
+│   └── support - Arquivos de suporte da automação
+│       └── pages - Representação das páginas web
+```
+
+## **Trabalhando no projeto**
+
+Como padrão, antes de começarmos a trabalhar no projeto, será necessário seguir os passos abaixo:
+
+**1. Trocar de branch (Master > Develop)** 
+```
+git checkout -b develop origin/develop
+```
+**2. Sincronizar seu repositorio local com o repositorio remoto**
+```
+git pull origin
+```
+**3. Criar uma nova branch**
+```
+git branch feature/<nome_da_branch>
+```
+
+**4. Entrar na branch**
+```
+git checkout feature/<nome_da_branch>
+## **Utilidades**
+```
+gem uninstall --all --ignore-dependencies
+gem cleanup
+```
+**Code lint**
+```
+rubocop
+```
+## **Execução dos testes**
+```
+- **Regressão** 
+```
+cucumber -t @fechamento_pedido
+```
+- **Cenário**
+```
+cucumber -t @comprar_produto
+```
