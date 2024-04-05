@@ -155,6 +155,7 @@ Segue os passos de instalação:
 geckdriver.JPG
 - Extraia o conteúdo do arquivo baixado para C:\Ruby26-x64\bin (Local de instalação do Ruby)
 
+
 ## **Instalação** 
 
 Siga os passos abaixo para instalação do projeto:
@@ -180,6 +181,13 @@ gem install cucumber -v 3.1.2
 ```
 gem install rubocop -v 1.7.0
 ```
+**Instalar o capybara para cucumber**
+```
+gem install capybara cucumber
+```
+**Instalar o pacote selenium-webdriver**
+gem install selenium-webdriver
+
 **Instalar o Selenium WebDriver**
 - **ChromeDriver** (Google Chrome): https://chromedriver.storage.googleapis.com/index.html 
 - **Geckodriver** (Firefox): https://github.com/mozilla/geckodriver/releases

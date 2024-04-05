@@ -1,0 +1,48 @@
+{
+    "yaml.schemas": {
+        "https://www.artillery.io/schema.json": []
+    },
+
+    "ruby.lint": {
+        "reek": true,
+        "rubocop": true,
+        "ruby": true,
+        "fasterer": true,
+        "debride": true,
+        "ruby-lint": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/_steps.rb",
+        "features/step_definitions/**/_steps.rb",
+        "features/step_definitions///_steps.rb"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.customParameters": [
+        {
+            "parameter": "{string}",
+            "value": ".s*"
+        },
+        {
+            "parameter": "{int}",
+            "value": ".i*"
+        }
+    ],
+    "cucucumberautocomplete.formatConfOverride": {
+        "And": 3,
+        "But": "relative"
+    },
+    "cucumberautocomplete.onTypeFormat": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "standard",
+    "ruby.intellisense": "rubyLocate",
+    "explorer.confirmDragAndDrop": false
+}
